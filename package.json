@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "wraps icebear",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostfictions/icewrap.git"
+  },
   "scripts": {
     "postinstall": "echo \"Building Icebear...\" && babel -q node_modules/peerio-icebear/src -d dist"
   },
