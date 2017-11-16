@@ -4,7 +4,7 @@
   "description": "wraps icebear",
   "main": "index.js",
   "scripts": {
-    "postinstall": "babel -q node_modules/peerio-icebear/src -d dist"
+    "postinstall": "echo \"Building Icebear...\" && babel -q node_modules/peerio-icebear/src -d dist"
   },
   "author": "s",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "babel-plugin-transform-export-extensions": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "opt-cli": "^1.6.0",
+    "peerio-icebear": "github:PeerioTechnologies/peerio-icebear#v3.0.8",
     "w3c-xmlhttprequest": "^2.1.2",
     "websocket": "^1.0.25"
   }
