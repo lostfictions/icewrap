@@ -37,7 +37,7 @@ declare module 'icewrap' {
       Contact: any
     };
     user: any;
-    constructor(botName: string, socketServerUrl : string);
+    constructor(botName: string, socketServerUrl? : string);
     login: (username: string, accountKey: string) => void;
     waitForConnection: () => Promise<void>;
     waitForAuth: () => Promise<void>;
