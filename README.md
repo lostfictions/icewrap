@@ -1,9 +1,14 @@
-wraps icebear so consumers don't have to pollute their project with extra
-dependencies or compile it themselves. also provides a very basic eventemitter
+wraps [icebear](https://github.com/PeerioTechnologies/peerio-icebear) for easier
+use: used standalone, it includes a self-contained repl, and when used as a
+package consumers don't have to pollute their project with extra dependencies or
+compile icebear themselves. the wrapper provides a very basic eventemitter
 interface.
 
-note that this package sets globals when it's imported: `WebSocket` and
-`XMLHttpRequest` will be set (and overridden, if they're already in use).
+i don't recommend looking at `package.json` or `index.js` to find out _how_
+exactly it makes things easier for consumers.
+
+note that this package by necessity sets globals when it's imported: `WebSocket`
+and `XMLHttpRequest` will be set (and overridden, if they're already in use).
 icebear itself overrides the global `Promise` implementation with Bluebird, so
 caveat emptor.
 
