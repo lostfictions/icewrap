@@ -2,9 +2,9 @@ const path = require("path");
 const os = require("os");
 const EventEmitter = require("events");
 
-const FileStream = require("./dist/models/files/node-file-stream");
-const StorageEngine = require("./dist/models/storage/node-json-storage");
-const { asPromise } = require("./dist/helpers/prombservable");
+const FileStream = require("../peerio-icebear/dist/models/files/node-file-stream");
+const StorageEngine = require("../peerio-icebear/dist/models/storage/node-json-storage");
+const { asPromise } = require("../peerio-icebear/dist/helpers/prombservable");
 
 const { when, autorun } = require("mobx");
 
@@ -14,7 +14,7 @@ global.XMLHttpRequest = require('w3c-xmlhttprequest').XMLHttpRequest;
 class PeerioClient extends EventEmitter {
   constructor(botName, socketServerUrl = 'wss://hocuspocus.peerio.com') {
     super();
-    this.app = require('./dist');
+    this.app = require('../peerio-icebear/dist');
 
     this.login = (username, accountKey) => {
       this.app.socket.start();

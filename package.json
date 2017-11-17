@@ -9,7 +9,7 @@
     "url": "git+https://github.com/lostfictions/icewrap.git"
   },
   "scripts": {
-    "postinstall": "echo \"Building Icebear...\" && echo `pwd` && babel -q ../peerio-icebear/src -d dist --plugins=transform-decorators-legacy,transform-class-properties,transform-es2015-modules-commonjs,transform-export-extensions,transform-object-rest-spread"
+    "postinstall": "echo \"Building Icebear...\" && echo `pwd` && babel -q ../peerio-icebear/src -d ../peerio-icebear/dist --plugins=transform-decorators-legacy,transform-class-properties,transform-es2015-modules-commonjs,transform-export-extensions,transform-object-rest-spread"
   },
   "author": "s",
   "license": "ISC",
