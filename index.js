@@ -66,6 +66,13 @@ class PeerioClient extends EventEmitter {
     });
 
     this.app.chatStore.events.on('messagesReceived', (data) => {
+      // data is:
+      // interface MessagesReceivedData {
+      //   freshBatchMentionCount: number
+      //   lastMessageText: string
+      //   unreadCount: number
+      //   chat: Chat
+      // }
       const message = data.chat.messages[data.chat.messages.length - 1];
       this.emit('message', { message, chat: data.chat });
     });
@@ -82,4 +89,4 @@ class PeerioClient extends EventEmitter {
   }
 }
 
-module.exports = PeerioClient;
+module.exports = { PeerioClient };

@@ -7,7 +7,7 @@ declare module 'icewrap' {
     chat: any;
   }
 
-  export default class PeerioClient extends EventEmitter {
+  export class PeerioClient extends EventEmitter {
     app: {
       errors: any
       config: any
