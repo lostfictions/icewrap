@@ -60,7 +60,7 @@ class PeerioClient extends EventEmitter {
         this.user.firstName = botName;
         this.user.lastName = '(bot)';
         this.user.saveProfile().then(() => {
-          console.log(`bot name set to "${this.user.firstName} ${this.user.lastName}"`);
+          console.log(`username set to "${this.user.firstName} ${this.user.lastName}"`);
         });
       }, 5000);
     });

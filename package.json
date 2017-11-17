@@ -9,6 +9,7 @@
     "url": "git+https://github.com/lostfictions/icewrap.git"
   },
   "scripts": {
+    "start": "node repl.js",
     "postinstall": "echo \"Building Icebear...\" && echo `pwd` && babel -q ../peerio-icebear/src -d ../peerio-icebear/dist --plugins=transform-decorators-legacy,transform-class-properties,transform-es2015-modules-commonjs,transform-export-extensions,transform-object-rest-spread"
   },
   "author": "s",
