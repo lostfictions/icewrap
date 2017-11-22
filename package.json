@@ -1,6 +1,6 @@
 {
   "name": "icewrap",
-  "version": "3.0.8",
+  "version": "3.2.5",
   "description": "wraps icebear",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,7 +22,7 @@
     "babel-plugin-transform-export-extensions": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "opt-cli": "^1.6.0",
-    "peerio-icebear": "github:PeerioTechnologies/peerio-icebear#v3.0.8",
+    "peerio-icebear": "github:PeerioTechnologies/peerio-icebear#v3.2.5",
     "w3c-xmlhttprequest": "^2.1.2",
     "websocket": "^1.0.25"
   }
